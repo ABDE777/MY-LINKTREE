@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazgoura | Développeur Front-End</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@300;400;500&display=swap">
+  <style>
+    /* Styles de base */
+    body {
+      font-family: 'DynaPuff', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    
+    .profil-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .photo-profil {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00d4ff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    
+    .photo-profil:hover {
+      transform: scale(1.05);
+    }
+    
+    h1 {
+      color: #0a2540;
+      margin-top: 15px;
+      font-size: 2em;
+    }
+    
+    .titre-metier {
+      color: #00d4ff;
+      font-weight: 400;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    
+    /* Grid des liens */
+    .grid-liens {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .lien-premium {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .lien-premium:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .icone {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #00d4ff;
+      min-width: 30px;
+      text-align: center;
+    }
+    
+    .texte-lien {
+      flex: 1;
+    }
+    
+    .titre-lien {
+      font-weight: 500;
+      color: #0a2540;
+      margin-bottom: 5px;
+      font-size: 1.1em;
+    }
+    
+    .description-lien {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .grid-liens {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="profil-container">
+    <img src="minee.jpg" alt="Portrait Professionnel" class="photo-profil">
+    <h1>ABD EL MONIM MAZGOURA</h1>
+    <div class="titre-metier">front-end developer <i class="fas fa-code"></i></div>
+  </div>
+
+  <div class="grid-liens">
+    <!-- Nouveau projet ajouté ici -->
+    <a href="https://inferno-heart-ecommerce.vercel.app/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-fire"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Inferno Heart E-Commerce</div>
+        <div class="description-lien">Boutique premium de t-shirts à designs exclusifs</div>
+      </div>
+    </a>
+
+    <a href="https://abdelmonim-mazgoura-portfolio.vercel.app/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-briefcase"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Mon Portfolio</div>
+        <div class="description-lien">Découvrez mes projets et réalisations</div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/mystore_2_" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fab fa-instagram"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Instagram De Ma Boutique Commercial</div>
+        <div class="description-lien">Collection privée de solutions haut de gamme</div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/techmo_x/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-code"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Instagram De Ma Page Dev</div>
+        <div class="description-lien">Innovations et recherches avancées</div>
+      </div>
+    </a>
+
+    <a href="https://savage01.youcan.store/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-store"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Ma Boutique Commerciale</div>
+        <div class="description-lien">Espace transactionnel VIP</div>
+      </div>
+    </a>
+
+    <a href="mailto:mazgouraabdalmounim@gmail.com" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-envelope"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">EMAIL</div>
+        <div class="description-lien">Contact Élite Communication sécurisée de niveau entreprise</div>
+      </div>
+    </a>
+
+    <a href="https://www.tiktok.com/@techmo_x" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fab fa-tiktok"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">TikTok De Ma Page Dev</div>
+        <div class="description-lien">Partage de connaissances techniques avancées</div>
+      </div>
+    </a>
+
+    <a href="https://www.linkedin.com/in/abd-el-monim-mazgoura-webfullstack/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fab fa-linkedin"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">LINKEDIN</div>
+        <div class="description-lien">Réseau Professionnel Collaborations stratégiques de haut niveau</div>
+      </div>
+    </a>
+
+    <a href="GITHUB.html" class="lien-premium">
+      <i class="icone fab fa-github"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">GITHUB</div>
+        <div class="description-lien">Référentiel d'Excellence Solutions techniques brevetées</div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abd El Monim Mazgoura | Développeur Front-End</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="2.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@300;400;500&display=swap">
+  <style>
+    /* Styles de base */
+    body {
+      font-family: 'DynaPuff', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    
+    .profil-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .photo-profil {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00d4ff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    
+    .photo-profil:hover {
+      transform: scale(1.05);
+    }
+    
+    h1 {
+      color: #0a2540;
+      margin-top: 15px;
+    }
+    
+    h2 {
+      color: #00d4ff;
+      font-weight: 400;
+    }
+    
+    /* Grid des liens */
+    .grid-liens {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .lien-premium {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .lien-premium:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .icone {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #00d4ff;
+      min-width: 30px;
+      text-align: center;
+    }
+    
+    .texte-lien {
+      flex: 1;
+    }
+    
+    .titre-lien {
+      font-weight: 500;
+      color: #0a2540;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .description-lien {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+    
+    .badge-nouveau {
+      background: #00d4ff;
+      color: #0a2540;
+      font-size: 0.7em;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: 8px;
+      font-weight: bold;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .grid-liens {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="profil-container">
+    <a href="index.html" style="background-color: transparent;box-shadow: 0 0 0;">
+      <img src="minee.jpg" alt="Portrait Professionnel" class="photo-profil">
+    </a>
+    <h1>ABD EL MONIM MAZGOURA</h1>
+    <h2>développeur front-end <i class="fas fa-code"></i></h2>
+    <p>Bienvenue sur mon profil Github !</p>
+  </div>
+
+  <div class="grid-liens">
+    <!-- Nouveau projet Inferno Heart en première position -->
+    <a href="https://inferno-heart-ecommerce.vercel.app/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-fire"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Inferno Heart E-Commerce <span class="badge-nouveau">Nouveau</span></div>
+        <div class="description-lien">Boutique premium de t-shirts à designs artistiques avec système de panier avancé et paiements sécurisés.</div>
+      </div>
+    </a>
+
+    <a href="https://abdelmonim-mazgoura-portfolio.vercel.app/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-briefcase"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Mon Portfolio</div>
+        <div class="description-lien">Découvrez mon travail et mes compétences professionnelles.</div>
+      </div>
+    </a>
+
+    <a href="https://github.com/ABDE777" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fab fa-github"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Profil GitHub</div>
+        <div class="description-lien">Découvrez mes dépôts et projets GitHub.</div>
+      </div>
+    </a>
+
+    <a href="https://clubitisfo.vercel.app/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-users"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">SITE WEB DE NOTRE CLUB</div>
+        <div class="description-lien">En savoir plus sur les activités et événements de notre club.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/ABDE-MARKET/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-shopping-cart"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">ABDE MARKET</div>
+        <div class="description-lien">Explorez notre marché en ligne exclusif.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/tp/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-window-maximize"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Mini Site</div>
+        <div class="description-lien">Un petit projet pour montrer mes compétences en développement web.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/AB-STORE/iindex.html" class="lien-premium" target='_blank' rel="noopener">
+      <i class="icone fas fa-store"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">AB Store</div>
+        <div class="description-lien">Visitez notre boutique en ligne pour une variété de produits.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/website-template/index.HTML" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-code"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Modèle de Site Web</div>
+        <div class="description-lien">Un modèle polyvalent pour créer des sites web.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/formulaire-simple/FORMULAIRE.html" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-file-alt"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Mini Formulaire</div>
+        <div class="description-lien">Un projet de formulaire simple pour la collecte de données.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/python-type-game/py%20game/index.html" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-gamepad"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Jeu de Dactylographie Python (Débutants)</div>
+        <div class="description-lien">Un jeu amusant pour améliorer vos compétences de dactylographie en Python.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/py-game-type-2-/py%20game%20adv/index.html" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-gamepad"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Jeu de Dactylographie Python (Intermédiaire)</div>
+        <div class="description-lien">Un jeu avancé pour améliorer vos compétences de dactylographie en Python.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/template-restaurant/" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-utensils"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Modèle pour Site Web de Restaurant</div>
+        <div class="description-lien">Un modèle professionnel pour les sites web de restaurants.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/SITE2/1stproject/home.html" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-tshirt"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Site Web de T-Shirts</div>
+        <div class="description-lien">Un site web dédié à la vente de t-shirts.</div>
+      </div>
+    </a>
+
+    <a href="https://abde777.github.io/SITE1/2ND%20PROJECT/index.html" class="lien-premium" target="_blank" rel="noopener">
+      <i class="icone fas fa-globe"></i>
+      <div class="texte-lien">
+        <div class="titre-lien">Site Web Simple</div>
+        <div class="description-lien">Un projet de site web simple et épuré.</div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
